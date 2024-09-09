@@ -243,7 +243,7 @@
       <div class='col'style='width: 200px; '>
          <label style='display:inline; color:#0f75bb;'>Wound Notes</label>
 			<br />
-         <textarea style="display:inline-block; width: 190px; height:100px; border: 1px solid black; background:transparent; color:black;" type="text" name="attr_WoundNotes" placeholder="Wound notes"/></textarea>
+         <textarea style="display:inline-block; width: 190px; height:100px; border: 1px solid black; background:transparent; color:black;" type="text" name="attr_WoundNotes" placeholder="T&#96;E&#96; CASCATO IL CAZZO"/></textarea>
       </div>
       </div>
 			</p>
@@ -325,12 +325,17 @@
 				<br />
    <h3 style="margin-bottom: 10px; color:crimson;">OBSESSIONS</h3>
 				<fieldset class="repeating_obs" style="margin-top:-20px;">
-					<input style='display:inline-block;  width:206px; border: none; text-align:left; background:transparent; color:black; border:1px solid black;' name="attr_obsname" type='text' value="obsession name">
+		<select name="attr_obs-trait" class="sheet-long" style='display:inline; background: transparent; border: none; color:black;'>
+			<option value="@{TSel}">Avarice</option>
+			<option value="@{TCow}">Fear</option>
+			<option value="@{TSus}">Jealousy</option>
+		</select>
+					<input style='display:inline-block;  width:160px; border: none; text-align:left; background:transparent; color:black; border:1px solid black;' name="attr_obsname" type='text' value="obsession name">
 					<input style='display:inline;' type="number" name="attr_obsvalue" class="sheet-carac2" style="background:transparent; color:black; border:1px solid black;" value="0" />
 					<input style='display:inline;  margin-left: 10px; margin-right: 10px;' type='checkbox' name='attr_CB-obsname' value='1' />
-					<button type='roll' name='roll_CB-obsname' value="/em @{MYNAME} rolls @{bsname} with a modifier of ?{modif|0} : \n/roll 1d20+[[{{@{obsvalue}+?{modif|0},0}>21}*(@{obsvalue}+?{modif|0}-20) + 0]]<[[@{obsvalue}+?{modif|0}]] \   @{obsname} roll  @{obsvalue} modif. ?{modif|0}"></button>
+					<button type='roll' name='roll_CB-obsname' value="/em @{MYNAME} rolls @{obsname} with a modifier of ?{modif|0} : \n/roll 1d20+[[{{@{obsvalue}+@{obs-trait}+?{modif|0},0}>21}*(@{obsvalue}+@{obs-trait}+?{modif|0}-20) + 0]]<[[@{obsvalue}+@{obs-trait}+?{modif|0}]] \   @{obsname} roll  @{obsvalue}+@{obs-trait} modif. ?{modif|0}"></button>
 					<br />
-				</fieldset>	
+				</fieldset>			
 		</div>
 		<div class="sheet-col">
 			<h3 style="margin-bottom: 10px; color:crimson;">PASSIONS</h3>
@@ -888,7 +893,7 @@ Movement +2, Healing Rate +2
 		<input style='display:inline-block; width:160px; font-size:1em; background: transparent; border: none; margin-bottom:5px; color:black;' name="attr_TDcible" type='text' value="target">
 		<input style='display:inline;' type="number" name="attr_TD-value" class="sheet-carac2" value="0" />
 					<input style='display:inline;  margin-left: 10px; margin-right: 10px;' type='checkbox' name='attr_CB-TDname' value='1' />
-		<button style='display:inline;' type='roll' name='roll_Test-TCow' value='/em @{MYNAME} makes a @{TDcible} directed trait roll. \n/roll 1d20+[[{{@{TD-trait}+?{modif|0},0}>21}*(@{TD-trait}+?{modif|0}-20) + 0]]<[[@{TD-trait}+@{TD-value}+?{modif|0}]] \ trait @{TD-trait} , target modifier @{TD-value} modifier ?{modif|0}'></button>
+		<button style='display:inline;' type='roll' name='roll_Test-TCow' value='/em @{MYNAME} makes a @{TDcible} directed trait roll. \n/roll 1d20+[[{{@{TD-trait}+@{TD-value}+?{modif|0},0}>21}*(@{TD-trait}+@{TD-value}+?{modif|0}-20) + 0]]<[[@{TD-trait}+@{TD-value}}+?{modif|0}]] \ trait @{TD-trait} , target modifier @{TD-value} modifier ?{modif|0}}'></button>
 		<br />
 	</fieldset>
 </div>
