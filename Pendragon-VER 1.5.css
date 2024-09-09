@@ -1,0 +1,483 @@
+
+.sheet-background{
+         background-image: url(https://s3.amazonaws.com/files.d20.io/images/399629543/emf6ErnQC2NRIZT3oddaOQ/med.jpg?1720168882.png); 
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+	     position: absolute;   
+} 
+
+.sheet-container {
+    position: relative;   
+    width: 1350px;
+    padding: 60px;
+	background-color: transparent;
+}
+
+
+/* TABS */
+div.sheet-tab-content { display: none; }
+
+input.sheet-tab1:checked ~ div.sheet-tab1,
+input.sheet-tab2:checked ~ div.sheet-tab2,
+input.sheet-tab3:checked ~ div.sheet-tab3,
+input.sheet-tab4:checked ~ div.sheet-tab4,
+input.sheet-tab5:checked ~ div.sheet-tab5,
+input.sheet-tab6:checked ~ div.sheet-tab6,
+input.sheet-tab7:checked ~ div.sheet-tab7,
+input.sheet-tab8:checked ~ div.sheet-tab8,
+
+{
+    display: block;
+}
+
+input.sheet-tab
+{
+    width: 100px;
+    height: 20px;
+    position: relative;
+    top: 0px;
+    left: 5px;
+    margin: -1.5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+
+input.sheet-tab + span::before
+{
+    content:attr(title);
+
+    border: solid 1px #a8a8a8;
+    border-bottom-color: black;
+    text-align: center;
+    display: inline-block;
+    
+    background: #fff;
+    background: -moz-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -webkit-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -ms-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -o-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    
+    width: 100px;
+    height: 20px;
+    font-size: 18px;
+    
+    position: absolute;
+    top: 57px;
+    left: 62px;
+}
+
+input.sheet-tab:checked + span::before
+{
+    background: #dcdcdc;
+    background: -moz-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: -webkit-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: -ms-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: -o-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    border-bottom-color: #fff;
+}
+
+input.sheet-tab:not(:first-child) + span::before
+{
+    border-left: none;
+}
+
+input.sheet-tab2 + span::before
+{
+    /*left: 180px;*/
+	left: 165px;
+    
+    background: #fff;
+    background: -moz-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -webkit-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -ms-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -o-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+}
+
+input.sheet-tab3 + span::before
+{
+    /* left: 330px; */
+	left: 267px;
+}
+
+
+input.sheet-tab4 + span::before
+{
+	/*left: 480px;*/
+    left: 369px;
+}
+
+input.sheet-tab5 + span::before
+{
+	/*left: 630px;*/
+    left: 471px;
+}
+
+input.sheet-tab6 + span::before
+{
+    /*left: 780px;*/
+	left: 573px;
+}
+
+input.sheet-tab7 + span::before
+{
+	/*left: 930px;*/
+    left: 675px;
+}
+
+input.sheet-tab8 + span::before
+{
+	/*left: 1080px;*/
+    left: 777px;
+}
+
+input.sheet-tab9 + span::before
+{
+	/*left: 1230px;*/
+    left: 879px;
+}
+
+div.sheet-tab-content
+{
+    margin: 2px 0 0 5px;
+    padding: 5px;
+}
+
+/* NPC TAB */
+
+div.sheet-Etab-content { display: none; }
+
+input.sheet-Etab1:checked ~ div.sheet-Etab1,
+input.sheet-Etab2:checked ~ div.sheet-Etab2,
+input.sheet-Etab3:checked ~ div.sheet-Etab3
+
+{
+    display: block;
+}
+
+input.sheet-Etab
+{
+    width: 100px;
+    height: 20px;
+    position: relative;
+    top: 0px;
+    left: 5px;
+    margin: -1.5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+}
+
+input.sheet-Etab + span::before
+{
+    content:attr(title);
+
+    border: solid 1px #a8a8a8;
+    border-bottom-color: black;
+    text-align: center;
+    display: inline-block;
+    
+    background: #fff;
+    background: -moz-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -webkit-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -ms-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -o-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    
+    width: 100px;
+    height: 20px;
+    font-size: 18px;
+    
+    position: absolute;
+    top: 81px;
+    left: 0px;
+}
+
+input.sheet-Etab:checked + span::before
+{
+    background: #dcdcdc;
+    background: -moz-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: -webkit-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: -ms-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: -o-linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    background: linear-gradient(to top, #fcfcfc, #dcdcdc, #fcfcfc);
+    border-bottom-color: #fff;
+}
+
+input.sheet-Etab:not(:first-child) + span::before
+{
+
+    border-left: none;
+}
+
+input.sheet-Etab2 + span::before
+{
+    /* left: 155px */
+    left: 102px;
+    
+    background: #fff;
+    background: -moz-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -webkit-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -ms-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: -o-linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+    background: linear-gradient(to top, #c8c8c8, #fff, #c8c8c8);
+}
+
+input.sheet-Etab3 + span::before
+{
+
+    
+    /* left: 305px */
+    left: 204px;
+}
+
+/* sheet */
+
+.sheet-col strong.sheet-dee {
+    font-size: 1em;
+    font-weight: bold;
+}
+.charsheet input,.charsheet select {
+   font-weight:bold;
+   text-align:center;
+}
+
+.charsheet input.sheet-long {
+    width: 10em;
+}
+
+.charsheet select.sheet-long {
+    width: 12em;
+}
+.charsheet input.sheet-short {
+    width: 4em;
+}
+.charsheet checkbox {
+    margin-left: 50px;
+}
+
+.sheet-carac1  {
+    font-size: 1em;
+     width: 8em;
+ 
+}
+
+.sheet-carac2, .sheet-carac3  {
+    font-size: 1em;
+     width: 2em;
+ 
+}
+.sheet-comp  {
+    font-size: 1em;
+     width: 2em;
+ 
+}
+
+.sheet-carac3 {
+
+    color: #00B7FF;
+}
+
+.charsheet table td, .charsheet table th {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+select.sheet-dtype {
+    width: 60px;
+    vertical-align: top;
+}
+.sheet-baseinfo {
+    display: inline-block;
+    width: 145px;
+    margin-right: 3px;
+  
+}
+
+/*Hiding Sections*/
+
+input.sheet-arrow {
+    float: left;
+}
+
+div.sheet-body {
+    display: block;
+}
+
+input.sheet-arrow:checked ~ div.sheet-body {
+    display: none;
+}
+
+input.sheet-toggle {
+    float: left;
+}
+
+div.sheet-enemy {
+    display: none;
+}
+
+input.sheet-toggle:checked ~ div.sheet-enemy {
+    display: block;
+}
+
+/* compétences */
+.sheet-comp{
+   
+}
+
+/*.sheet-comp label {
+     display: inline;     
+
+    
+}
+
+.sheet-comp input, .sheet-comp button,  .sheet-comp checkbox {
+    display: inline;     
+}*/
+sheet-titre2 {
+   display: inline-block; 
+   width: 120px;
+}
+
+
+
+
+/* Smaller margins - remove these if you want the huge default left margin */
+.sheet-rolltemplate-custom {
+  margin-left: -37px;
+}
+.withoutavatars .sheet-rolltemplate-custom {
+  margin-left: -7px;
+}
+
+.sheet-rolltemplate-custom .sheet-container {
+  border: 1px solid;
+  /* by default, the border is the same color as the header. You can change this here, e.g. to black */
+  border-color: var(--header-bg-color);
+}
+
+/* Header formatting - title and subtitle */
+.sheet-rolltemplate-custom .sheet-header {
+  background-color: var(--header-bg-color);
+  /* change text-align to center to center the header text */
+  text-align: left;
+  color: var(--header-text-color);
+  padding: 5px;
+}
+.sheet-rolltemplate-custom .sheet-title {
+  font-size:1.1em;
+}
+.sheet-rolltemplate-custom .sheet-subtitle {
+  font-size:.9em;
+}
+
+/* example colors */
+.sheet-rolltemplate-custom .sheet-container {
+  /* this is the default color */
+  --header-bg-color: rgba(4, 85, 167, 0.8);
+  --header-text-color: #FFF;
+}
+.sheet-rolltemplate-custom .sheet-container.sheet-color-red {
+  --header-bg-color: #F00;
+}
+.sheet-rolltemplate-custom .sheet-container.sheet-color-green {
+  --header-bg-color: #0F0;
+  --header-text-color: #000;
+}
+
+/* Allprops part */
+.sheet-rolltemplate-custom .sheet-content {
+  display: grid;
+  background: #efe6dd;
+  color: black;
+  /* Header formatting - modify the column layout below */
+  grid-template-columns: auto auto;
+  /* Line height to match default roll template */
+  line-height:1.4em;
+}
+.sheet-rolltemplate-custom .sheet-content > div {
+  padding: 5px;
+}
+
+/* Left column */
+.sheet-rolltemplate-custom .sheet-content .sheet-key {
+  font-weight: bold;
+  padding-right: 10px;
+  text-align: right;
+  text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+/* Empty rule, use this if you want to change the right column 
+.sheet-rolltemplate-custom .sheet-value {
+
+}
+*/
+
+/* Make even-numbered rows grey */
+.sheet-rolltemplate-custom .sheet-content :nth-child(4n+3),
+.sheet-rolltemplate-custom .sheet-content :nth-child(4n) {
+  background:#cdbfb4;
+}
+
+/* Description field */
+.sheet-rolltemplate-custom .sheet-desc {
+  grid-column: span 2;
+  padding: 5px;
+  text-align: center;
+}
+
+.sheet-rolltemplate-custom .inlinerollresult  {
+    background:#fef68e;
+	display: inline-block;
+	min-width: 1.5em;
+	text-align: center;
+	border: 2px solid rgba(167, 168, 170,1);
+}
+.sheet-rolltemplate-custom .inlinerollresult.fullcrit {
+    background-color:#fef68e;
+	border: 2px solid #3FB315;
+}
+.sheet-rolltemplate-custom .inlinerollresult.fullfail {
+    background-color:#fef68e;
+	border: 2px solid #B31515;
+}
+.sheet-rolltemplate-custom .inlinerollresult.importantroll {
+
+	border: 2px solid #4A57ED;
+}
+
+.sheet-rolltemplate-custom.sheet-rolltemplate-darkmode .inlinerollresult  {
+    background:#fef68e;
+	display: inline-block;
+	min-width: 1.5em;
+	text-align: center;
+	border: 2px solid rgba(167, 168, 170,1);
+}
+.sheet-rolltemplate-custom.sheet-rolltemplate-darkmode .inlinerollresult.fullcrit {
+    background-color:#fef68e;
+	border: 2px solid #3FB315;
+}
+.sheet-rolltemplate-custom.sheet-rolltemplate-darkmode .inlinerollresult.fullfail {
+    background-color:#fef68e;
+	border: 2px solid #B31515;
+}
+.sheet-rolltemplate-custom.sheet-rolltemplate-darkmode .inlinerollresult.importantroll {
+
+	border: 2px solid #4A57ED;
+}
+
+.sheet-rolltemplate-default a[href^='!'],.sheet-rolltemplate-default a[href^='~'],
+.sheet-rolltemplate-custom a[href^='!'],.sheet-rolltemplate-custom a[href^='~']{
+    background-color: rgb(184,26,54);
+  text-shadow: none;
+}
+
+
+
